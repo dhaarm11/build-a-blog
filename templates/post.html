@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>My Blog!</h1>
+    <h1>{{id}}</h1>
+
+    <hr>    
+        <body>
+            {% for post in new_post %}
+            <h2>{{post.title}}</h2>
+            <p>{{post.body}}</p>
+            {% endfor %}
+        </body>
+
+{% endblock %}
